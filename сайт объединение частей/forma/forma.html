@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - ZeWeb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+        <div class="logo"><img src="image/Group 11.png" class="imgLogo"></div>
+        <nav class="nav">
+            <a href="#">О нас</a>
+            <a href="#">Услуги</a>
+            <a href="#">Цены</a>
+            <a href="#">Преимущества</a>
+            <a href="#">Команда</a>
+            <a href="#">Портфолио</a>
+            <a href="#">FAQ</a>
+            <a href="#">Отзывы</a>
+        </nav>
+       <a href="#" class="header-btn">Обсудить проект</a>
+    </div>
+</header>
+
+<main class="main">
+
+    <div class="section-title">
+        <h2>
+                Рады услышать Вас,<br>
+                Свяжитесь с нами
+        </h2>
+    </div>
+
+
+
+
+
+ <div class="form-container">
+    <form action="php.php" method="POST" novalidate>
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Ваше имя</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Введите Ваше имя" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Ваш номер телефона</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Введите Ваш номер телефона" required pattern="[\+0-9\s\-()]{7,}">
+        </div>
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <label for="service" class="form-label">Выберите необходимую вам услугу</label>
+          <select class="form-select" id="service" name="service" required>
+            <option value="" selected disabled>Услуга</option>
+            <option value="Разработка сайта">Разработка сайта</option>
+            <option value="SEO-продвижение">SEO-продвижение</option>
+            <option value="Маркетинг">Маркетинг</option>
+            <option value="Дизайн">Дизайн</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="budget" class="form-label">Бюджет проекта</label>
+          <input type="text" class="form-control" id="budget" name="budget" placeholder="Ваш бюджет">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Сообщение</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Расскажите нам о своем проекте"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-custom">
+        Отправить сообщение
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+<br><br>
+
+
+<div class="form-container">
+    <h2 class="section-title text-center">Есть вопросы?<br>У нас есть ответы</h2>
+<div class="container-custom">
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Есть ли у вас опыт работы с проектами, похожими на мой?
+            
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Да, у нас большой опыт в работе с разнообразными проектами, включая похожие на ваш.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            На какие этапы разделяется ваша работа?
+            
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Работа делится на несколько этапов: анализ, планирование, разработка, тестирование и внедрение.
+          </div>
+        </div>
+      </div>
+  <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Как вы обеспечиваете качество своих услуг?
+           
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Мы применяем стандарты качества и проводим регулярные проверки на всех этапах работы.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            Как рассчитывается стоимость услуги?
+            
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Наши цены зависят от объёма работы. Мы можем обсудить детали и выработать решение, которое будет удовлетворять обе стороны.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Как мне отслеживать прогресс?
+            
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Мы предоставляем регулярные отчёты и доступ к системе управления проектом для отслеживания прогресса.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Какие гарантии на услуги вы предоставляете?
+            
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Мы даём гарантию на все наши услуги в течение 6 месяцев после сдачи проекта.
+          </div>
+        </div>
+      </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-brand">
+              <div><img src="image/Group 11.png" class="imgLogo"></div>
+            </div>
+            <p>Помогаем бизнесу развиваться и решать задачи <br>в интернете</p>
+            <div class="social-links">
+                <a href="#"><img src="image/Telegram.png" style="margin-bottom: 4px;"></a>
+                <a href="#"><img src="image/Whatsapp.png"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Карта сайта</h3>
+            <a href="#">О нас</a>
+             <a href="#">Услуги</a>
+            <a href="#">Цены</a>
+            <a href="#">Преимущества</a>
+            <a href="#">Команда</a>
+            <a href="#">Портфолио</a>
+            <a href="#">FAQ</a>
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="footer-section">
+            <h3>Другие страницы</h3>
+            <a href="#">Ошибка 404</a>
+            <a href="#">Правила и условия</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-section">
+            <h3>Контактная информация</h3>
+            <p>ул. Дзержинского, 25/43</p>
+            <a href="mailto:info@zeweb.ru">info@zeweb.ru</a>
+            <a href="tel:+79371331812">8 937 133 98 12</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 ZeWeb. Все права защищены.
+    </div>
+
+</footer>
+
+</body>
+</html>
