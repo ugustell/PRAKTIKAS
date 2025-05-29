@@ -1,18 +1,34 @@
 <?php
-// Инициализация переменных
-$name = $phone = $service = $budget = $message = "";
-$errorMessage = "";
+// Настройки подключения к базе данных
+$host = 'localhost';  // или 'mysql', если localhost не работает
+$dbname = 'zeweb';
+$username = 'ugustell';
+$password = '111111';
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Получаем и очищаем данные
+
+
+try {
+    // Создаём подключение к базе через PDO с кодировкой utf8mb4
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    // Устанавливаем режим ошибок в исключения
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    // Если подключение не удалось — выводим ошибку и завершаем скрипт
+    die("Ошибка подключения к базе данных: " . $e->getMessage());
+}
+
+// Проверяем, что данные пришли методом POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Получаем и очищаем данные из формы
     $name = trim($_POST['name'] ?? '');
     $phone = trim($_POST['phone'] ?? '');
     $service = trim($_POST['service'] ?? '');
     $budget = trim($_POST['budget'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
-    // Валидация
-    $errors = [];
+
+ $errors = [];
     if (empty($name)) {
         $errors[] = "Имя обязательно для заполнения.";
     }
@@ -34,26 +50,37 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Формируем письмо
-    $to = "ggussytry@gmail.com"; // Замените на ваш email
-    $subject = "Новая заявка с сайта";
-    $body = "Имя: $name\nТелефон: $phone\nУслуга: $service\nБюджет: $budget\nСообщение:\n$message\n";
 
-    $headers = "From: no-reply@yourdomain.ru\r\n" .
-               "Reply-To: no-reply@yourdomain.ru\r\n" .
-               "Content-Type: text/plain; charset=utf-8\r\n";
+    try {
+        // Подготавливаем SQL-запрос для вставки данных
+        $stmt = $pdo->prepare("INSERT INTO applications (name, phone, service, budget, message, created_at) VALUES (:name, :phone, :service, :budget, :message, NOW())");
 
-    // Отправка письма
-    if (mail($to, $subject, $body, $headers)) {
-        echo "<script>alert('Спасибо! Ваша заявка отправлена.'); window.location.href = document.referrer;</script>";
-    } else {
-        echo "<script>alert('Ошибка при отправке заявки. Пожалуйста, попробуйте позже.'); history.back();</script>";
+        // Выполняем запрос с привязанными значениями
+        $stmt->execute([
+            ':name' => $name,
+            ':phone' => $phone,
+            ':service' => $service,
+            ':budget' => $budget,
+            ':message' => $message
+        ]);
+
+        // Успешно — выводим сообщение и перенаправляем обратно на форму
+        echo "<script>alert('Спасибо! Ваша заявка отправлена.'); window.location.href = history.back();</script>";
+        exit;
+
+    } catch (PDOException $e) {
+        // Если ошибка при вставке — выводим сообщение
+        echo "<script>alert('Ошибка при отправке заявки: " . $e->getMessage() . "'); history.back();</script>";
+        exit;
     }
-    exit;
 } else {
-    // Если открыли php.php напрямую — перенаправляем на форму
-    header("Location: index.html"); // замените на страницу с формой
+    // Если скрипт был вызван не POST-запросом — перенаправляем на форму
+    header('Location: index.html');
     exit;
+
+
+    
 }
+
 ?>
 
