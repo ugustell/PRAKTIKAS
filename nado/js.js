@@ -83,25 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 wrap: true,
                 pause: 'hover'
             });
-
-            // Обработка кликов по индикаторам с защитой от множественных кликов
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    if (isTransitioning) return; // Блокируем клики во время анимации
-                    
-                    const currentActive = document.querySelector('.custom-indicator.active');
-                    const currentIndex = Array.from(indicators).indexOf(currentActive);
-                    
-                    if (index === currentIndex) return; // Не переключаем на тот же слайд
-                    
-                    isTransitioning = true;
-                    bsCarousel.to(index);
-                });
-            });
-
             // Обработка начала перехода
             carousel.addEventListener('slide.bs.carousel', function(event) {
                 isTransitioning = true;
@@ -115,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Разблокируем переходы после завершения анимации
                 setTimeout(() => {
                     isTransitioning = false;
-                }, 100);
+                }, 200);
             });
         });
 
@@ -123,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Инициализация Яндекс.Карты
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-        center: [53.534063, 49.317967], // Координаты Тольятти
+        center: [53.534063, 49.317967],
         zoom: 15,
         controls: ['zoomControl']
     }, {
