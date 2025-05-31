@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+        <div class="logo"><img src="image/Group 11.png" class="imgLogo"></div>
+        <nav class="nav">
+        <a href="#home" class="nav-link active">О нас</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#pricing" class="nav-link">Цены</a>
+        <a href="#advantages" class="nav-link">Преимущества</a>
+        <a href="#team" class="nav-link">Команда</a>
+        <a href="#portfolio" class="nav-link">Портфолио</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#reviews" class="nav-link">Отзывы</a>
+        </nav>
+       <a href="forma/forma.html" class="header-btn">Обсудить проект</a>
+
+         <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+    </div>
+</header>
+
+ <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <button class="mobile-menu-close">✕</button>
+        <a href="#home" class="nav-link active">О нас</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#pricing" class="nav-link">Цены</a>
+        <a href="#advantages" class="nav-link">Преимущества</a>
+        <a href="#team" class="nav-link">Команда</a>
+        <a href="#portfolio" class="nav-link">Портфолио</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#reviews" class="nav-link">Отзывы</a>
+    </nav>
+
+<main main class="main-content">
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Создание смелых брендов с продуманным дизайном</h1>
+            <p>В zeweb мы помогаем небольшим стартапам решать самые сложные мировые проблемы с помощью индивидуальных решений,<br>проводя вас от стратегии к успеху на конкурентном рынке</p>
+            <a href="forma/forma.html" class="get-advice-btn">Получить консультанцию</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-intro">
+            <p class="fs-2">
+                Мы объединяем 
+                <span class="rounded-pill p-2 purple fs-3"><img src="image/Pink Magic Stick.png">креативность</span>
+                <span class="rounded-pill p-2 blue"><img src="image/Lamp.png">инновации</span> и 
+                <span class="rounded-pill p-2 orange"><img src="image/Frame.png">стратегию</span><br>
+                для создания исключительной стратегии цифрового опыта и технологий для достижения исключительных и эффективных результатов.
+            </p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number"><span class="plus">+</span>40</div>
+                <div class="stat-label">Завершенных проектов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number"><span class="plus">+</span>15</div>
+                <div class="stat-label">Лет опыта</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number"><img src="image/star.png" class="plus">4.8</div>
+                <div class="stat-label">Нас выбирают</div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!-- Services Section -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Наш широкий спектр услуг</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card purple" data-service="sites">
+        <img class="pb-4" src="image/app.badge.png" alt="Сайты">
+        <h3 class="service-text-purple">Сайты</h3>
+      </div>
+      <div class="service-card blue" data-service="business">
+        <img class="pb-4" src="image/ic32-suitcase.png" alt="Бизнес-сервисы">
+        <h3 class="service-text-blue">Бизнес-сервисы</h3>
+      </div>
+      <div class="service-card orange" data-service="marketing">
+        <img class="pb-4" src="image/Orange Magic Stick.png" alt="Маркетинг">
+        <h3 class="service-text-orange">Маркетинг</h3>
+      </div>
+      <div class="service-card green" data-service="branding">
+        <img class="pb-4" src="image/Bar Graph.png" alt="Брендинг">
+        <h3 class="service-text-green">Брендинг</h3>
+      </div>
+      <div class="service-card pink" data-service="outsourcing">
+        <img class="pb-4" src="image/Layout.png" alt="Аутсорсинг">
+        <h3 class="service-text-pink">Аутсорсинг</h3>
+      </div>
+      <div class="service-card yellow" data-service="turnkey">
+        <img class="pb-4" src="image/Key.png" alt="Под ключ">
+        <h3 class="service-text-yellow">Под ключ</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-title">
+      <h2>Цены на предлагаемые услуги</h2>
+    </div>
+    <div class="pricing-grid-new">
+      <div class="pricing-card-new gradient-blue-purple" data-service="sites">
+        <div class="pricing-badge bg-dark">Лендинг</div>
+        <p class="pricing-description text-dark">Предназначен для теста идеи или продукта в рекламе, либо для презентации компании, продукции, услуги в узком сегменте.</p>
+        <div class="pricing-cost text-dark">От 30 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 20 дней</div>
+      </div>
+      <div class="pricing-card-new gradient-blue-purple" data-service="sites">
+        <div class="pricing-badge bg-dark">Корпоративный</div>
+        <p class="pricing-description text-dark">Сайт компании, для демонстрации ассортимента продукции и услуг с целью продажи, а также обеспечить необходимый имидж для представительства в интернете.</p>
+  <div class="pricing-cost text-dark">От 75 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 30 дней</div>
+      </div>
+      <div class="pricing-card-new gradient-blue-purple" data-service="sites">
+        <div class="pricing-badge bg-dark">Интернет-магазин</div>
+        <p class="pricing-description text-dark">Каталог товаров с функцией корзины и оформления заказов онлайн. Обеспечивает поиск и выбор товаров, удобный и быстрый заказ.</p>
+        <div class="pricing-cost text-dark">От 120 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 45 дней</div>
+      </div>
+      <div class="pricing-card-new gradient-blue-purple" data-service="sites">
+        <div class="pricing-badge bg-dark">Сайт-визитка</div>
+        <p class="pricing-description text-dark">Презентационный сайт для небольшой компании, о которой представляет информацию, ассортимент её продукции и услуг.</p>
+        <div class="pricing-cost text-dark">От 20 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 15 дней</div>
+      </div>
+
+      <div class="pricing-card-new gradient-blue-purple d-none" data-service="business">
+        <div class="pricing-badge bg-dark">LMS система</div>
+        <p class="pricing-description text-dark">Платформа-каталог онлайн-курсов с функционалом создания и управления программами. Включает личный кабинет учащегося.</p>
+        <div class="pricing-cost text-dark">От 160 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 2 месяцев</div>
+      </div>
+     <div class="pricing-card-new gradient-blue-purple d-none" data-service="business">
+        <div class="pricing-badge bg-dark">CRM система</div>
+        <p class="pricing-description text-dark">Система сбора и анализа данные о клиентах, их предпочтениях и истории взаимодействий с компанией.</p>
+        <div class="pricing-cost text-dark">От 200 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 1 месяца</div>
+      </div>
+
+      <div class="pricing-card-new gradient-blue-purple d-none" data-service="marketing">
+        <div class="pricing-badge bg-dark">Контекстная реклама</div>
+        <p class="pricing-description text-dark">Грамотно подбираем ключевые слова и фразы, составляем рекламные объявления, проводим анализ и управляем стратегией, ставками, Повышением кликабельность объявлений и знаем как экономить на рекламе.</p>
+        <div class="pricing-cost text-dark">От 15 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 10 дней</div>
+      </div>
+       <div class="pricing-card-new gradient-blue-purple d-none" data-service="marketing">
+        <div class="pricing-badge bg-dark">SMM</div>
+        <p class="pricing-description text-dark">Проводим комплекс мероприятий в социальной медиа среде, разрабатываем коммуникационную стратегию и создаем инструкции по ведению сообществ.</p>
+        <div class="pricing-cost text-dark">От 25 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 15 дней</div>
+      </div>
+       <div class="pricing-card-new gradient-blue-purple d-none" data-service="marketing">
+        <div class="pricing-badge bg-dark">Таргетированная реклама</div>
+        <p class="pricing-description text-dark">Точечно анализируем целевую аудиторию и привлекаем клиентов основываясь на их интересах, поведении и других критериях, за счет чего улучшаем бренд-репутацию, а так же формируем долгосрочные отношения с потребителем.</p>
+        <div class="pricing-cost text-dark">От 20 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 10 дней</div>
+      </div>
+       <div class="pricing-card-new gradient-blue-purple d-none" data-service="marketing">
+        <div class="pricing-badge bg-dark">SEO</div>
+        <p class="pricing-description text-dark">Анализ проекта по ряду параметров, формирование списка рекомендаций и внесение правок для продвижения в поисковых системах.</p>
+        <div class="pricing-cost text-dark">От 20 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 30 дней</div>
+      </div>
+
+
+      <div class="pricing-card-new gradient-blue-purple d-none" data-service="branding">
+        <div class="pricing-badge bg-dark">Логотип</div>
+        <p class="pricing-description text-dark">Элемент корпоративной идентичности, который помогает публике ассоциировать определенное изображение, символ или набор цветов с конкретной компанией или продуктом.</p>
+        <div class="pricing-cost text-dark">От 10 тысяч руб.</div>
+        <div class="pricing-time text-dark">От 5 дней</div>
+    </div>
+    <div class="pricing-card-new gradient-blue-purple d-none" data-service="branding">
+          <div class="pricing-badge bg-dark">Фирменный стиль</div>
+          <p class="pricing-description text-dark">Создание единого, узнаваемого образа компании в сети. Включает в себя визуальные, текстовые и интерактивные элементы, которые помогают создать цельный образ и формирование мнения о бренде.</p>
+          <div class="pricing-cost text-dark">От 30 тысяч руб.</div>
+          <div class="pricing-time text-dark">От 15 дней</div>
+    </div><div class="pricing-card-new gradient-blue-purple d-none" data-service="branding">
+          <div class="pricing-badge bg-dark">UX/UI дизайн сайтов</div>
+          <p class="pricing-description text-dark">Проработка внешнего вида интерфейса, а также эргономики, логики расположения элементов, интуитивности для взаимодействия пользователя с продуктом и услугой.</p>
+          <div class="pricing-cost text-dark">От 40тысяч руб.</div>
+          <div class="pricing-time text-dark">От 15 дней</div>
+    </div><div class="pricing-card-new gradient-blue-purple d-none" data-service="branding">
+          <div class="pricing-badge bg-dark">Инфографика для маркетплейсов</div>
+          <p class="pricing-description text-dark">Создания впечатляющих и привлекательных карточек товаров для вашего бизнеса, способных увеличить продажи вашего бренда на торговых площадках.</p>
+          <div class="pricing-cost text-dark">От 5 тысяч руб.</div>
+          <div class="pricing-time text-dark">От 5 дней</div>
+    </div>
+
+
+  
+
+      <div class="pricing-card-new gradient-blue-purple d-none" data-service="outsourcing">
+        <div class="pricing-badge bg-dark">Техническая поддержка</div>
+        <p class="pricing-description text-dark">Наладим работу компьютеров, оргтехники и поможем пользователям с их проблемами. Справимся с базовой настройкой 1С, установкой электронной цифровой подписи и специфическим ПО, поможем удалить вирусы. Выезжаем к вам, но можем решить проблему удалённо, если есть такая возможность.</p>
+        <div class="pricing-cost text-dark">От 1600 руб./мес.</div>
+        <div class="pricing-time text-dark">От 1 часа</div>
+      </div>
+       <div class="pricing-card-new gradient-blue-purple d-none" data-service="outsourcing">
+        <div class="pricing-badge bg-dark">Системный администратор
+      </div>
+        <p class="pricing-description text-dark">Исправит ошибки в работе серверных операционных систем. Работает как с Windows, так и Linux ОС. Настроит централизованное управление вашими данными, пользователями и инфраструктурой. Может поднять почтовый сервер или сервер IP-телефонии, защитить вашу сеть от злоумышленников и оптимизировать её работу.</p>
+        <div class="pricing-cost text-dark">От 2200 руб./мес.</div>
+        <div class="pricing-time text-dark">ОТ 1 часа</div>
+      </div>
+       <div class="pricing-card-new gradient-blue-purple d-none" data-service="outsourcing">
+        <div class="pricing-badge bg-dark">Инженер</div>
+        <p class="pricing-description text-dark">Поможет составить техническое задание под ваши бизнес-задачи, проектирует IT-инфраструктуру целиком, проведёт аудит и оценит риски. Работает с бюджетами, составит план по развитию вашего IT на несколько лет вперед.</p>
+        <div class="pricing-cost text-dark">От 3000 руб./мес.</div>
+        <div class="pricing-time text-dark">От 1 часа</div>
+      </div>
+
+
+
+
+      <div class="pricing-card-new gradient-blue-purple d-none" data-service="turnkey">
+        <div class="pricing-badge bg-dark">Под ключ</div>
+        <p class="pricing-description text-dark">Полный цикл продвижения бизнеса: от анализа ниши до создания и поддержки сайта или бизнес-сервиса. Комплексный подход, рассчитанный на эффективность, качество, максимальный охват целевой аудитории.</p>
+        <div class="pricing-cost text-dark">Узнайте больше получив консультацию</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const serviceCards = document.querySelectorAll('.service-card');
+    const pricingCards = document.querySelectorAll('.pricing-card-new');
+
+    function showPricingFor(service) {
+      pricingCards.forEach(card => {
+        if(card.dataset.service === service) {
+          card.classList.remove('d-none');
+        } else {
+          card.classList.add('d-none');
+        }
+      });
+    }
+
+    serviceCards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Снимаем активный класс со всех
+serviceCards.forEach(c => c.classList.remove('active'));
+        // Добавляем активный класс текущему
+        card.classList.add('active');
+
+        const service = card.dataset.service;
+        showPricingFor(service);
+      });
+    });
+
+    // Инициализация: показываем по умолчанию первый сервис
+    if(serviceCards.length > 0) {
+      serviceCards[0].classList.add('active');
+      showPricingFor(serviceCards[0].dataset.service);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- CTA Block in Pricing -->
+    <div class="pricing-cta bg-dark">
+        <div class="pricing-cta-content">
+            <p>Посмотрите на нашу работу в действии.<br>
+            Начните свой творческий путь вместе с нами!</p>
+            <div class="pricing-cta-buttons">
+                <a href="forma/forma.html" class="pricing-cta-btn primary">Обсудить проект</a>
+                <a href="portfolio.html" class="pricing-cta-btn secondary">Посмотреть портфолио</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Advantages Section -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Преимущества нашей компании</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <h3>1. Экономия ресурсов</h3>
+                    <p>Вам не нужно тратить время на поиск разных специалистов для разных задач. Весь процесс можно организовать и контролировать в одном месте.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>2. Согласованность</h3>
+                    <p>Весь процесс работы над вашим проектом, начиная от разработки стратегии и заканчивая внедрением, будет согласован и взаимосвязан.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>3. Навыки и знания</h3>
+                    <p>Мы имеем богатый опыт работы с различными проектами, что позволяет использовать лучшие индустриальные практики и инновации.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>4. Универсальный бренд</h3>
+                    <p>Работа с агентством полного цикла позволяет эффективно создать единый и согласованный образ бренда во всех видах медиа.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>5. Один контакт</h3>
+                    <p>Вам будет легче общаться и координировать свои действия с одной командой, а не с несколькими разными людьми или организациями.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>6. Понимание бизнеса</h3>
+                    <p>Мы вникаем в бизнес-процессы вашей компании, что позволяет нам понимать бизнес-цели и потребности клиентов на глубоком уровне.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>7. Стабильность</h3>
+                    <p>Мы довольно давно работаем на рынке IT-услуг и можем гарантированно предложить стабильность и надежность.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>8. Прозрачность</h3>
+                    <p>Наша команда предлагает всестороннюю аналитику и отчеты о проделанной работе, что обеспечивает полную прозрачность для клиентов.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>9. Фокус на результат</h3>
+                    <p>Диджитал-агентство ZEWEB ориентируется на достижение конкретных бизнес-целей и стремится к быстрому возврату инвестиций.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="team" id="team">
+
+  <div class="section-title">
+                <h2>Познакомьтесь с творческими умами, стоящими за нашим успехом<br>проектов</h2>
+  </div>
+
+<div class="wrapper kyrs">
+  <div class="item one"><img src="image/1.png" alt=""></div>
+  <div class="item two"><img src="image/2.png" alt=""></div>
+  <div class="item three"><img src="image/maska3.png" alt=""></div>
+  <div class="item four"><img src="image/maska4.png" alt=""></div>
+</div>
+
+ <div class="team-cards">
+            <div class="team-card tcard-one"> 
+                <div class="team-name">Сергей Кутрань</div> 
+                <div class="team-position">Директор</div> 
+                <div class="social-links-team">     
+                    <a href="https://t.me/sergeykutran" class="social-link-team" title="Telegram">
+                       <svg viewBox="0 0 24 24" fill="currentColor">                               
+                            <img src="image/Telegram.png" style="margin-bottom: 1px; margin-right:1px;">
+                        </svg>                          
+                    </a>     
+                    <a href="https://wa.me/89372138912" class="social-link-team" title="Whatsapp">
+                       <svg viewBox="0 0 24 24" fill="currentColor">       
+                        <img src="image/Whatsapp.png">
+                       </svg>  
+                    </a>   
+                </div>
+            </div>
+
+            <div class="team-card tcard-two"> 
+                <div class="team-name">Евгений Чебыкин</div> 
+                <div class="team-position">Специалист по вайб-кодингу</div> 
+                <div class="social-links-team">     
+                     <a href="https://t.me/kinergetik" class="social-link-team" title="Telegram">
+                       <svg viewBox="0 0 24 24" fill="currentColor">                               
+                            <img src="image/Telegram.png" style="margin-bottom: 1px; margin-right:1px;">
+                        </svg>                          
+                    </a>     
+                    <a href="https://wa.me/" class="social-link-team" title="Whatsapp">
+                       <svg viewBox="0 0 24 24" fill="currentColor">       
+                        <img src="image/Whatsapp.png">
+                       </svg>  
+                    </a>  
+                </div>
+            </div>
+
+            <div class="team-card tcard-two"> 
+                <div class="team-name">Иван Купеченко</div> 
+                <div class="team-position">Дизайнер продукта</div> 
+                <div class="social-links-team">     
+                     <a href="https://t.me/username" class="social-link-team" title="Telegram">
+                       <svg viewBox="0 0 24 24" fill="currentColor">                               
+                            <img src="image/Telegram.png" style="margin-bottom: 1px; margin-right:1px;">
+                        </svg>                          
+                    </a>     
+                    <a href="https://wa.me/" class="social-link-team" title="Whatsapp">
+                       <svg viewBox="0 0 24 24" fill="currentColor">       
+                        <img src="image/Whatsapp.png">
+                       </svg>  
+                    </a>  
+                </div>
+            </div>
+
+            <div class="team-card tcard-two"> 
+                <div class="team-name">Светлана Витченкова</div> 
+                <div class="team-position">Дизайнер пользовательского интерфейса</div> 
+                <div class="social-links-team">     
+                     <a href="https://t.me/username" class="social-link-team" title="Telegram">
+                       <svg viewBox="0 0 24 24" fill="currentColor">                               
+                            <img src="image/Telegram.png" style="margin-bottom: 1px; margin-right:1px;">
+                        </svg>                          
+                    </a>     
+                    <a href="https://wa.me/" class="social-link-team" title="Whatsapp">
+                       <svg viewBox="0 0 24 24" fill="currentColor">       
+                        <img src="image/Whatsapp.png">
+                       </svg>  
+                    </a>  
+                </div>
+            </div>
+        </div>
+</section>
+  
+
+
+    <section id="portfolio" class="portfolio-section">
+      <h1 class="portfolio-title">Примеры реализованных<br>проектов</h1>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-card client-story">
+          <div class="card-tag">Истории клиентов</div>
+          <div class="card-content">
+            <div class="card-description">
+              Команда Zeweb помогла нам полностью обновить сайт и интегрировать удобную систему онлайн заказов. Работать с ними было легко и приятно — всегда на связи, быстро решали все вопросы. Благодаря новому сайту продажи выросли на 40%! Рекомендую всем, кто ценит качество и профессионализм.
+            </div>
+          </div>
+          <div class="client-info">
+            <div class="client-name">Анна Петрова</div>
+            <div class="client-role">Владелица интернет-магазина</div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card stats-card">
+          <div class="card-tag">Факты и цифры</div>
+          <div class="stats-number">91%</div>
+          <div class="stats-text">Клиенты рекомендуют наши<br>IT-услуги.</div>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <div class="cta-text">Узнать о нас больше</div>
+        <a href="portfolio.html" class="cta-btn">Посмотреть портфолио</a>
+      </div>
+    </section>
+
+
+    <section id="faq" class="faq-section">
+  <h2 class="faq-title">Есть вопросы?<br>У нас есть ответы</h2>
+  
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Есть ли у вас опыт работы с проектами, похожими на мой?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Да, у нас большой опыт работы с различными типами проектов. Мы работали с интернет-магазинами, корпоративными сайтами, лендингами и веб-приложениями.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>На какие этапы разделяется ваша работа?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Работа включает: анализ требований, создание дизайн-макета, верстку, программирование функционала, тестирование и запуск проекта.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Как вы обеспечиваете качество своих услуг?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Мы используем современные технологии, проводим тщательное тестирование на всех этапах и предоставляем гарантию на выполненные работы.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Как рассчитывается стоимость услуги?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Наши цены зависят от объема работы. Мы можем обсудить детали и выработать решение, которое будет удовлетворять обе стороны.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Как мне отслеживать прогресс?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Мы предоставляем регулярные отчеты о ходе работ и поддерживаем постоянную связь через удобные для вас каналы коммуникации.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Какие гарантии на услуги вы предоставляете?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-answer">
+        Мы предоставляем гарантию на все выполненные работы сроком 6 месяцев и бесплатную техническую поддержку в течение месяца после запуска.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="reviews" class="reviews-section">
+  <h2 class="reviews-title">Отзывы</h2>
+  
+  <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+     <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+     <!-- Стрелки навигации -->
+      <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="custom-arrow-icon">‹</span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      
+      <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="custom-arrow-icon">›</span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-platform">
+              <img src="image/avito-ru-classified-advertising-logo-mobile-app-image-png-favpng-UzHKKRTARPeDQNPE3j1tEDtQm (1).jpg" alt="Avito" class="platform-icon">
+            </div>
+            <div class="reviewer-name">Михаил Петров</div>
+            <div class="review-text">
+              Профессиональный подход, все сделано в срок. Очень доволен результатом работы!
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-platform">
+              <img src="image/avito-ru-classified-advertising-logo-mobile-app-image-png-favpng-UzHKKRTARPeDQNPE3j1tEDtQm (1).jpg" alt="Avito" class="platform-icon">
+            </div>
+            <div class="reviewer-name">Богдан Игнатьев</div>
+            <div class="review-text">
+              Все настроил оперативно! спокойный, вежливый, отвечал на все вопросы, довел дело до конца, остался на связи, на следующий день перенастроилисьтся все ли работает!)
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-platform">
+              <img src="image/1200x630wa.png" alt="2ГИС" class="platform-iconG">
+            </div>
+            <div class="reviewer-name">Елена Козлова</div>
+            <div class="review-text">
+              Замечательная команда! Помогли решить сложную задачу, работали быстро и эффективно.
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-platform">
+              <img src="image/1200x630wa.png" alt="2ГИС" class="platform-iconG">
+            </div>
+            <div class="reviewer-name">Анна Смирнова</div>
+            <div class="review-text">
+              Отличная работа! Быстро, качественно, с пониманием всех требований. Рекомендую всем!
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+
+           <div class="review-card">
+            <div class="review-platform">
+              <img src="image/1200x630wa.png" alt="2ГИС" class="platform-iconG">
+            </div>
+            <div class="reviewer-name">Дарья</div>
+            <div class="review-text">
+              Прекрасный специалист. Все доступно объяснил по моей проблеме, не навязал бесполезные услуги. Обязательно буду обращаться к вам!
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-platform">
+              <img src="image/avito-ru-classified-advertising-logo-mobile-app-image-png-favpng-UzHKKRTARPeDQNPE3j1tEDtQm (1).jpg" alt="Avito" class="platform-icon">
+            </div>
+            <div class="reviewer-name">Всеволод Большев</div>
+            <div class="review-text">
+              Все хорошо,проблему решили в течение 2 часов ,буду теперь только к этому мастеру ходить.
+            </div>
+            <div class="review-year">2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Индикаторы карусели -->
+    <div class="custom-indicators">
+            <div class="custom-indicator active" data-slide="0"></div>
+            <div class="custom-indicator" data-slide="1"></div>
+        </div>
+    
+  </div>
+  <!-- Кнопка "Оставить отзыв" -->
+    <div class="text-center mt-4">
+      <a href="#" class="btn-review reviews-btn">Оставить отзыв</a>
+    </div>
+</section>
+<div class="modal-overlay" id="reviewsModal">
+        <div class="modal">
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+            
+            <h2 class="modal-title">Оставить отзыв</h2>
+            <p class="modal-subtitle">Выберите площадку для размещения отзыва</p>
+            
+            <div class="review-options">
+                <a href="https://www.avito.ru/user/review?fid=789c9232bf32c7cafcb959e5abcf5f5f25383200020000ffff42610826&page_from=public_profile_summary&trigger=none" class="review-option avito-option">
+                    <div class="option-icon avito-icon"><img src="image/avito-ru-classified-advertising-logo-mobile-app-image-png-favpng-UzHKKRTARPeDQNPE3j1tEDtQm (1).jpg"></div>
+                    <div class="option-content">
+                        <div class="option-title">Avito</div>
+                        <div class="option-description">Оставить отзыв на Авито</div>
+                    </div>
+                </a>
+                
+                <a href="https://2gis.ru/togliatti/firm/70000001080798882/49.317294%2C53.533791/tab/reviews/addreview?m=49.31799%2C53.533833%2F18.06" class="review-option gis-option">
+                    <div class="option-icon gis-icon"><img src="image/1200x630wa.png"></div>
+                    <div class="option-content">
+                        <div class="option-title">2GIS</div>
+                        <div class="option-description">Написать отзыв в 2ГИС</div>
+                    </div>
+                </a>
+                
+                <a href="https://yandex.ru/maps/240/togliatti/?add-review=true&ll=49.317420%2C53.533735&mode=poi&poi%5Bpoint%5D=49.317287%2C53.533848&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D176547023749&tab=reviews&z=18.73" class="review-option yandex-option">
+                    <div class="option-icon yandex-icon"><img src="image/d83576333c7c7eae8c40ae573e6f2e69.cd420052806ddc1621466712365d7297.png"></div>
+                    <div class="option-content">
+                        <div class="option-title">Яндекс</div>
+                        <div class="option-description">Оценить в Яндекс Картах</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Карта -->
+<section class="map-section">
+  <div class="map-overlay">
+    <div class="map-content">
+      <p class="map-title">Инновационные решения для смелых брендов</p>
+      <p class="map-description">
+        Хотите повысить узнаваемость своего бренда? Мы создаем захватывающие впечатления, которые увлекают, вовлекают в работу и делают ваш бизнес незабываемым при каждом взаимодействии.
+      </p>
+      <a href="forma/forma.html" class="map-btn">Обсудить проект</a>
+    </div>
+  </div>
+  <div id="map" class="yandex-map"></div>
+  <a href="https://yandex.ru/maps/?text=улица Дзержинского, 25Ас1, Тольятти, Самарская область, 445039" class="yandex-map-btn">Открыть в Яндекс картах</a>
+</section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-brand">
+              <div><img src="image/Group 11.png" class="imgLogo"></div>
+            </div>
+            <p>Помогаем бизнесу развиваться и решать задачи <br>в интернете</p>
+            <div class="social-links">
+                <a href="https://t.me/sergeykutran"><img src="image/Telegram.png" style="margin-bottom: 4px;"></a>
+                <a href="https://wa.me/89372138912"><img src="image/Whatsapp.png"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Карта сайта</h3>
+             <a href="#home" class="nav-link active">О нас</a>
+              <a href="#services" class="nav-link">Услуги</a>
+              <a href="#pricing" class="nav-link">Цены</a>
+              <a href="#advantages" class="nav-link">Преимущества</a>
+              <a href="#team" class="nav-link">Команда</a>
+              <a href="portfolio.html" class="nav-link">Портфолио</a>
+              <a href="#faq" class="nav-link">FAQ</a>
+              <a href="#reviews" class="nav-link">Отзывы</a>
+        </div>
+        <div class="footer-section">
+            <h3>Другие страницы</h3>
+            <a href="404/404.html">Ошибка 404</a>
+            <a href="forma/forma.html">Обсудить проект</a>
+            <a href="confidenc.html">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-section">
+            <h3>Контактная информация</h3>
+            <a href="https://yandex.ru/maps/?text=улица Дзержинского, 25Ас1, Тольятти, Самарская область, 445039">ул. Дзержинского, 25Ас1</a>
+            <a href="mailto:info@zeweb.ru">info@zeweb.ru</a>
+            <a href="tel:+79371331812">8 937 133 98 12</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 ZeWeb. Все права защищены.
+    </div>
+</footer>
+<script src="js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
