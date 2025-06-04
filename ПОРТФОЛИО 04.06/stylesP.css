@@ -1,0 +1,35 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+.section-title p {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-card-wrapper {
+    display: flex;
+}
+.project-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 320px;
+    width: 100%;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .project-card {
+      height: auto;
+      min-height: 300px;
+    }
+}
